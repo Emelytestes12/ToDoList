@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Suporte a acentos e caracteres especiais -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Deixa o site responsivo -->
+    
+    <!-- Importa o CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Importa fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>To Do list</title>
+</head>
+
+<body>
+    <!-- Container central que segura todo o conteúdo -->
+    <div class="container">
+        <!-- Campo para digitar a tarefa -->
+        <input class="input-task" placeholder="O que tenho que fazer...">
+        
+        <!-- Botão para adicionar a tarefa -->
+        <button class="button-add-task">Adicionar</button>
+
+        <!-- Lista onde aparecerão as tarefas -->
+        <ul class="list-tasks"></ul>
+    </div>
+    
+    <!-- Importa o script JS no final para não travar o carregamento -->
+    <script src="script.js"></script>
+</body>
+</html>

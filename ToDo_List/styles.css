@@ -1,0 +1,105 @@
+/* Reset básico: tira margens, paddings e define padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+/* Fundo do site com o GIF */
+body {
+    background-image: url('https://64.media.tumblr.com/38b1724765eadf9335bebcbb749584c8/f88674de97e340e8-a9/s2549x1823/8bd592a3b4e72f99a15d9eff9a395b8120e6984a.gif');
+    background-size: cover;          /* Faz o fundo cobrir a tela toda */
+    background-repeat: no-repeat;    /* Não repete */
+    background-position: center;     /* Centraliza */
+    background-attachment: fixed;    /* Fixa o fundo ao rolar a página */
+}
+
+/* Caixa principal */
+.container {
+    background-color: rgba(60, 30, 60, 0.8); /* Fundo transparente */
+    width: 500px;
+    border-radius: 10px; 
+    padding: 20px;
+    margin: 100px auto 0; /* Centraliza horizontal */
+    box-shadow: 0 0 15px rgba(255, 100, 200, 0.5);
+    border: 1px solid rgba(255, 160, 220, 0.3);
+}
+
+/* Campo de digitar tarefa */
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    background-color: rgba(255, 240, 250, 0.9);
+    color: #663366;
+}
+
+/* Botão de adicionar */
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #FF6FB5;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right; /* Joga para direita */
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 5px rgba(255, 100, 200, 0.5);
+}
+
+/* Efeitos do botão */
+.button-add-task:hover {
+    opacity: 0.9;
+    background-color: #FF7FC5;
+}
+
+.button-add-task:active {
+    opacity: 0.7;
+}
+
+/* Lista de tarefas */
+.list-tasks {
+    width: 100%;
+    list-style: none; /* Tira as bolinhas */
+    margin-top: 30px;
+}
+
+/* Cada tarefa */
+.task {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex; /* Deixa lado a lado */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-left: 4px solid #FF6FB5; /* Barrinha colorida na esquerda */
+}
+
+/* Ícones (check e lixeira) */
+img {
+    height: 25px;
+    opacity: 0; /* Esconde por padrão */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Mostra ícones ao passar o mouse */
+.task:hover img {
+    opacity: 1;
+}
+
+/* Quando a tarefa é concluída */
+.done {
+    background-color: rgba(200, 120, 180, 0.7);
+    text-decoration: line-through; /* Risco no texto */
+    border-left: 4px solid #C64B8A;
+}
