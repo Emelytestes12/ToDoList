@@ -1,4 +1,4 @@
-#  💗To Do List💗
+#  To Do List
 
 
 Este é um projeto de **lista de tarefas** feito com **HTML, CSS e JavaScript**.
