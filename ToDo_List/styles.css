@@ -1,105 +1,104 @@
-/* Reset básico: tira margens, paddings e define padrão */
+/* Reset básico e fonte */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    outline: none;
+    margin: 0; /* tira espaço padrão */
+    padding: 0; /* tira padding padrão */
+    box-sizing: border-box; /* deixa o width e height mais previsível */
+    font-family: 'Roboto', sans-serif; /* usa a fonte Roboto */
+    outline: none; /* remove contorno padrão de inputs e botões */
 }
 
-/* Fundo do site com o GIF */
+/* Fundo do site - imagem será definida pelo JS */
 body {
-    background-image: url('https://64.media.tumblr.com/38b1724765eadf9335bebcbb749584c8/f88674de97e340e8-a9/s2549x1823/8bd592a3b4e72f99a15d9eff9a395b8120e6984a.gif');
-    background-size: cover;          /* Faz o fundo cobrir a tela toda */
-    background-repeat: no-repeat;    /* Não repete */
-    background-position: center;     /* Centraliza */
-    background-attachment: fixed;    /* Fixa o fundo ao rolar a página */
+    background-size: cover; /* faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-position: center; /* centraliza */
+    background-attachment: fixed; /* fixa o fundo mesmo quando rola a página */
 }
 
-/* Caixa principal */
+/* Container principal do site */
 .container {
-    background-color: rgba(60, 30, 60, 0.8); /* Fundo transparente */
-    width: 500px;
-    border-radius: 10px; 
-    padding: 20px;
-    margin: 100px auto 0; /* Centraliza horizontal */
-    box-shadow: 0 0 15px rgba(255, 100, 200, 0.5);
-    border: 1px solid rgba(255, 160, 220, 0.3);
+    background-color: rgba(60, 30, 60, 0.8); /* fundo meio transparente roxo escuro */
+    width: 500px; /* largura do container */
+    border-radius: 10px; /* cantos arredondados */
+    padding: 20px; /* espaço interno */
+    margin: 100px auto 0; /* centraliza horizontalmente e dá espaço em cima */
+    box-shadow: 0 0 15px rgba(255, 100, 200, 0.5); /* sombra rosa suave */
+    border: 1px solid rgba(255, 160, 220, 0.3); /* borda suave */
 }
 
-/* Campo de digitar tarefa */
+/* Input de digitar tarefa */
 .input-task {
-    border: none;
-    border-radius: 5px;
-    width: 300px;
-    height: 40px;
-    padding-left: 10px;
-    background-color: rgba(255, 240, 250, 0.9);
-    color: #663366;
+    border: none; /* tira a borda padrão */
+    border-radius: 5px; /* cantinhos arredondados */
+    width: 300px; /* largura do input */
+    height: 40px; /* altura */
+    padding-left: 10px; /* espaço interno na esquerda */
+    background-color: rgba(255, 240, 250, 0.9); /* fundo claro semi-transparente */
+    color: #663366; /* cor do texto */
 }
 
-/* Botão de adicionar */
+/* Botão de adicionar tarefa */
 .button-add-task {
-    border: none;
-    border-radius: 5px;
+    border: none; 
+    border-radius: 5px; 
     height: 40px;
-    background-color: #FF6FB5;
-    color: #ffffff;
-    font-size: 17px;
-    padding: 0 15px;
-    float: right; /* Joga para direita */
-    cursor: pointer;
-    font-weight: 700;
-    box-shadow: 0 0 5px rgba(255, 100, 200, 0.5);
+    background-color: #FF6FB5; /* rosa chamativo */
+    color: #ffffff; /* texto branco */
+    font-size: 17px; 
+    padding: 0 15px; /* espaço interno horizontal */
+    float: right; /* joga pra direita */
+    cursor: pointer; /* muda o cursor quando passa em cima */
+    font-weight: 700; 
+    box-shadow: 0 0 5px rgba(255, 100, 200, 0.5); /* sombra pequena */
 }
 
 /* Efeitos do botão */
 .button-add-task:hover {
-    opacity: 0.9;
-    background-color: #FF7FC5;
+    opacity: 0.9; /* fica levemente transparente ao passar mouse */
+    background-color: #FF7FC5; /* muda tom de rosa */
 }
 
 .button-add-task:active {
-    opacity: 0.7;
+    opacity: 0.7; /* ainda mais transparente quando clica */
 }
 
 /* Lista de tarefas */
 .list-tasks {
-    width: 100%;
-    list-style: none; /* Tira as bolinhas */
-    margin-top: 30px;
+    width: 100%; 
+    list-style: none; /* tira as bolinhas do ul */
+    margin-top: 30px; 
 }
 
-/* Cada tarefa */
+/* Cada tarefa individual */
 .task {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 50px;
-    display: flex; /* Deixa lado a lado */
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border-left: 4px solid #FF6FB5; /* Barrinha colorida na esquerda */
+    background-color: rgba(255, 255, 255, 0.8); /* fundo branco transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+    height: 50px; 
+    display: flex; /* deixa os itens em linha */
+    align-items: center; /* centraliza vertical */
+    justify-content: space-between; /* espaço entre texto e ícones */
+    padding: 0 15px; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+    border-left: 4px solid #FF6FB5; /* barrinha rosa na esquerda */
 }
 
 /* Ícones (check e lixeira) */
 img {
     height: 25px;
-    opacity: 0; /* Esconde por padrão */
-    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* escondidos por padrão */
+    transition: opacity 0.5s ease-in-out; /* transição suave */
 }
 
-/* Mostra ícones ao passar o mouse */
+/* Quando passa o mouse na tarefa, ícones aparecem */
 .task:hover img {
     opacity: 1;
 }
 
-/* Quando a tarefa é concluída */
+/* Tarefa concluída */
 .done {
-    background-color: rgba(200, 120, 180, 0.7);
-    text-decoration: line-through; /* Risco no texto */
-    border-left: 4px solid #C64B8A;
+    background-color: rgba(200, 120, 180, 0.7); /* roxo suave */
+    text-decoration: line-through; /* risco no texto */
+    border-left: 4px solid #C64B8A; /* muda a barrinha da esquerda */
 }

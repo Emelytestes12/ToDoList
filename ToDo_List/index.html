@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> <!-- Suporte a acentos e caracteres especiais -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Deixa o site responsivo -->
-    
-    <!-- Importa o CSS -->
+    <meta charset="UTF-8"> <!-- Define que o site aceita acentos e caracteres especiais -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE antigo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site responsivo -->
+
+    <!-- Link para o CSS do projeto -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Importa fonte do Google Fonts -->
+    <!-- Google Fonts: Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -17,19 +17,19 @@
 </head>
 
 <body>
-    <!-- Container central que segura todo o conteúdo -->
+    <!-- Container principal que segura todo o conteúdo do site -->
     <div class="container">
-        <!-- Campo para digitar a tarefa -->
+        <!-- Input onde o usuário digita a tarefa -->
         <input class="input-task" placeholder="O que tenho que fazer...">
         
         <!-- Botão para adicionar a tarefa -->
         <button class="button-add-task">Adicionar</button>
 
-        <!-- Lista onde aparecerão as tarefas -->
+        <!-- Lista que vai receber as tarefas -->
         <ul class="list-tasks"></ul>
     </div>
     
-    <!-- Importa o script JS no final para não travar o carregamento -->
+    <!-- JS do projeto, colocado no final pra não travar o carregamento -->
     <script src="script.js"></script>
 </body>
 </html>
