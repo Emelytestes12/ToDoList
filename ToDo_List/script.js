@@ -1,25 +1,21 @@
 // =========================
-// Configuração do fundo GIF com fallback
+// Configuração do fundo com fundo.gif local
 // =========================
 
-// URL do GIF principal
-const gifURL = 'https://64.media.tumblr.com/38b1724765eadf9335bebcbb749584c8/f88674de97e340e8-a9/s2549x1823/8bd592a3b4e72f99a15d9eff9a395b8120e6984a.gif';
-// URL da imagem de fallback caso o GIF falhe
-const fallbackURL = 'fundo.png';
+const localGif = 'fundo.gif';
 
-// Criamos uma imagem só pra testar se o GIF carrega
 const testeGIF = new Image();
-testeGIF.src = gifURL;
+testeGIF.src = localGif;
 
-// Se o GIF carregar, usa ele como fundo
 testeGIF.onload = () => {
-    document.body.style.backgroundImage = `url('${gifURL}')`;
+    document.body.style.backgroundImage = `url('${localGif}')`;
 };
 
-// Se o GIF não carregar, usa a imagem de fallback
 testeGIF.onerror = () => {
-    document.body.style.backgroundImage = `url('${fallbackURL}')`;
+    console.error('Erro ao carregar fundo.gif');
+    document.body.style.backgroundColor = 'pink'; // Fundo rosa se o GIF falhar
 };
+
 
 // =========================
 // Funções da To Do List
