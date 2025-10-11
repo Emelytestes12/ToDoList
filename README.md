@@ -4,7 +4,7 @@
 Este é um projeto de **lista de tarefas** feito com **HTML, CSS e JavaScript**.
 ![Preview do projeto](img.png)
 
-- 💗 Acesse: https://todolistemy.netlify.app/
+ 💗 [Acesse](https://todolistemy.netlify.app/) 💗
 
 ## 🌟 Funcionalidades
 
